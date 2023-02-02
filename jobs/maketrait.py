@@ -41,7 +41,7 @@ trait $name
 ''')
 		base_code = base_code.substitute({ 'name': trait, 'foo': '$foo', 'this': '$this' })
 
-		file = open("./src/traits/{name}Trait.php".format(name=trait), "w")
+		file = open("./src/traits/{name}.php".format(name=trait), "w")
 		file.write(base_code)
 		file.close()
 
